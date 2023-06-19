@@ -15,18 +15,15 @@ export default {
       title: `${this.data.albumId} - ${this.data.id}`,
       meta: [
         {
-          hid: 'title',
-          name: 'title',
+          name: 'og:title',
           content: `${this.data.albumId} - ${this.data.id}`
         },
         {
-          hid: 'description',
-          name: 'description',
+          name: 'og:description',
           content: this.data.title
         },
         {
-          hid: 'og-image',
-          name: 'og-image',
+          name: 'og:image',
           content: this.data.thumbnailUrl
         }
       ]
