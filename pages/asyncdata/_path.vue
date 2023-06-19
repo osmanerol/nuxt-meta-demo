@@ -12,20 +12,20 @@ export default {
   name: 'AsyncDataPathPage',
   head() {
     return {
-      title: `${this.data.albumId} - ${this.data.id}`,
+      title: `${this.data.albumId} - ${this.data.id} Test`,
       meta: [
         {
-          name: 'og:title',
+          property: 'og:title',
           content: `${this.data.albumId} - ${this.data.id}`
         },
         {
-          name: 'og:description',
+          property: 'og:description',
           content: this.data.title
         },
         {
-          name: 'og:image',
+          property: 'og:image',
           content: this.data.thumbnailUrl
-        }
+        },
       ]
     }
   },
