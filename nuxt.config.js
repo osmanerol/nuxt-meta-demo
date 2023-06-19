@@ -10,6 +10,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
+      /*
       { hid: 'title', name: 'title', content: 'NFTDeli' },
       { hid: 'description', name: 'description', content: 'Nuxt config description' },
       { hid: 'image', itemprop: 'image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png' },
@@ -21,6 +22,7 @@ export default {
       { hid: 'twitter:title', property: 'twitter:title', content: 'NFTDeli twitter' },
       { hid: 'twitter:description', property: 'twitter:description', content: 'Nuxt config description twitter' },
       { hid: 'twitter:image', property: 'twitter:image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png' },
+      */
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
