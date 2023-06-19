@@ -15,15 +15,18 @@ export default {
       title: `${this.data.albumId} - ${this.data.id}`,
       meta: [
         {
+          hid: 'async-data-title',
           name: 'title',
           content: `${this.data.albumId} - ${this.data.id}`
         },
         {
+          hid: 'async-data-description',
           name: 'description',
           content: this.data.title
         },
         {
-          name: 'image',
+          hid: 'async-data-description',
+          itemprop: 'image',
           content: this.data.thumbnailUrl
         },
       ]

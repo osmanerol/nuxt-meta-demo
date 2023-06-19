@@ -10,9 +10,9 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'title', content: 'Nuxt config title' },
+      { name: 'title', content: 'NFTDeli' },
       { name: 'description', content: 'Nuxt config description' },
-      { name: 'image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png' },
+      { itemprop: 'image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png' },
       { hid: 'og-type', property: 'og:type', content: 'website' }
     ],
     link: [
