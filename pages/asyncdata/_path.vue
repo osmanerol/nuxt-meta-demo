@@ -26,32 +26,32 @@ export default {
         },
         {
           hid: 'override-og-title',
-          name: 'og:title',
+          property: 'og:title',
           content: `${this.data.albumId} - ${this.data.id} og`
         },
         {
           hid: 'override-og-description',
-          name: 'og:description',
+          property: 'og:description',
           content: this.data.title + ' og'
         },
         {
           hid: 'override-og-image',
-          itemprop: 'og:image',
+          property: 'og:image',
           content: this.data.thumbnailUrl
         },
         {
           hid: 'override-twitter-title',
-          name: 'twitter:title',
+          property: 'twitter:title',
           content: `${this.data.albumId} - ${this.data.id} twitter`
         },
         {
           hid: 'override-twitter-description',
-          name: 'twitter:description',
+          property: 'twitter:description',
           content: this.data.title + ' twitter' 
         },
         {
           hid: 'override-twitter-image',
-          itemprop: 'twitter:image',
+          property: 'twitter:image',
           content: this.data.thumbnailUrl
         },
       ]
