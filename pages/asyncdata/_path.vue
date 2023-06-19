@@ -15,6 +15,16 @@ export default {
       title: `${this.data.albumId} - ${this.data.id}`,
       meta: [
         {
+          hid: 'override-title',
+          name: 'title',
+          content: `${this.data.albumId} - ${this.data.id} default`
+        },
+        {
+          hid: 'override-description',
+          name: 'description',
+          content: this.data.title + ' default'
+        },
+        {
           hid: 'override-og-title',
           name: 'og:title',
           content: `${this.data.albumId} - ${this.data.id} og`
