@@ -25,7 +25,7 @@ export default {
           content: this.data.title
         },
         {
-          hid: 'async-data-description',
+          hid: 'async-data-image',
           itemprop: 'image',
           content: this.data.thumbnailUrl
         },
