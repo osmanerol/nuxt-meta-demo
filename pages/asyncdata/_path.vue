@@ -12,7 +12,7 @@ export default {
   name: 'AsyncDataPathPage',
   head() {
     return {
-      title: this.data.title,
+      title: `${this.data.albumId} - ${this.data.id}`,
       meta: [
         {
           hid: 'title',
@@ -25,8 +25,8 @@ export default {
           content: this.data.title
         },
         {
-          hid: 'image',
-          name: 'image',
+          hid: 'og-image',
+          name: 'og-image',
           content: this.data.thumbnailUrl
         }
       ]
