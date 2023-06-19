@@ -21,7 +21,7 @@ export default {
         },
         {
           hid: 'description',
-          name: 'title',
+          name: 'description',
           content: this.data.title
         },
         {
