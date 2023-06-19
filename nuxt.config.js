@@ -1,7 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'demo',
+    title: 'Nuxt config title',
+    titleTemplate: '%s | Nuxt config title',
     htmlAttrs: {
       lang: 'en'
     },
@@ -9,8 +10,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'title', name: 'title', content: 'Nuxt config title' },
-      { hid: 'description', name: 'description', content: 'Nuxt config description' },
+      { hid: 'title', name: 'og:title', content: 'Nuxt config title' },
+      { hid: 'description', name: 'og:description', content: 'Nuxt config description' },
       { hid: 'og-type', property: 'og:type', content: 'website' }
     ],
     link: [

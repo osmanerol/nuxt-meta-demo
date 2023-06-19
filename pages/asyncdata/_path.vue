@@ -12,7 +12,7 @@ export default {
   name: 'AsyncDataPathPage',
   head() {
     return {
-      title: `${this.data.albumId} - ${this.data.id} Test`,
+      title: `${this.data.albumId} - ${this.data.id}`,
       meta: [
         {
           property: 'og:title',
