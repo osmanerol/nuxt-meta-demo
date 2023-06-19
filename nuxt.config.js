@@ -13,7 +13,14 @@ export default {
       { name: 'title', content: 'NFTDeli' },
       { name: 'description', content: 'Nuxt config description' },
       { itemprop: 'image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png' },
-      { hid: 'og-type', property: 'og:type', content: 'website' }
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'NFTDeli og' },
+      { property: 'og:description', content: 'Nuxt config description og' },
+      { property: 'og:image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png' },
+      { property: 'twitter:card', content: 'summary_large_image' },
+      { property: 'twitter:title', content: 'NFTDeli twitter' },
+      { property: 'twitter:description', content: 'Nuxt config description twitter' },
+      { property: 'twitter:image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

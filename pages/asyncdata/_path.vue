@@ -15,18 +15,33 @@ export default {
       title: `${this.data.albumId} - ${this.data.id}`,
       meta: [
         {
-          hid: 'async-data-title',
-          name: 'title',
-          content: `${this.data.albumId} - ${this.data.id}`
+          hid: 'override-og-title',
+          name: 'og:title',
+          content: `${this.data.albumId} - ${this.data.id} og`
         },
         {
-          hid: 'async-data-description',
-          name: 'description',
-          content: this.data.title
+          hid: 'override-og-description',
+          name: 'og:description',
+          content: this.data.title + ' og'
         },
         {
-          hid: 'async-data-image',
-          itemprop: 'image',
+          hid: 'override-og-image',
+          itemprop: 'og:image',
+          content: this.data.thumbnailUrl
+        },
+        {
+          hid: 'override-twitter-title',
+          name: 'twitter:title',
+          content: `${this.data.albumId} - ${this.data.id} twitter`
+        },
+        {
+          hid: 'override-twitter-description',
+          name: 'twitter:description',
+          content: this.data.title + ' twitter' 
+        },
+        {
+          hid: 'override-twitter-image',
+          itemprop: 'twitter:image',
           content: this.data.thumbnailUrl
         },
       ]
