@@ -12,7 +12,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { property: 'og:title', content: 'Nuxt config title' },
       { property: 'og:description', content: 'Nuxt config description' },
-      { property: 'og:image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png,' },
+      { property: 'og:image', content: 'https://storage.googleapis.com/nft-prod-bucket/nftdeli/nfts/BITCI/0xff693fb6829b40f1aad4759c08d86d20fd5e4893/6481.png' },
       { hid: 'og-type', property: 'og:type', content: 'website' }
     ],
     link: [
