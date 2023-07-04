@@ -55,7 +55,7 @@ export default {
     }
   },
   async fetch() {
-    this.data = await this.$axios.$get(`https://jsonplaceholder.typicode.com/photos/123`)
+    this.data = await this.$axios.$get(`https://jsonplaceholder.typicode.com/photos/1`)
   }
 }
 </script>

@@ -50,7 +50,7 @@ export default {
     }
   },
   async asyncData(context) {
-    const data = await context.$axios.$get(`https://jsonplaceholder.typicode.com/photos/123`)
+    const data = await context.$axios.$get(`https://jsonplaceholder.typicode.com/photos/2`)
     return { 
       data
     }
