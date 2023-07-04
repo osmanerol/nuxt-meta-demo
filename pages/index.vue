@@ -1,7 +1,10 @@
 <template>
   <div class="home">
+    <h1>Home</h1>
     <nuxt-link :to="{ name: 'asyncdata-path', params: { path: 1 } }">Async Data</nuxt-link>
-    <nuxt-link :to="{ name: 'fetch-path', params: { path: 2 } }">Fetch</nuxt-link>
+    <nuxt-link :to="{ name: 'fetch-path', params: { path: 1 } }">Fetch Data</nuxt-link>
+    <nuxt-link :to="{ name: 'test' }">Test</nuxt-link>
+    <nuxt-link :to="{ name: 'Login' }">Login</nuxt-link>
   </div>
 </template>
 

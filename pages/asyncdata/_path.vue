@@ -50,12 +50,23 @@ export default {
     }
   },
   async asyncData(context) {
-    const path = context.route.params.path
-    const data = await context.$axios.$get(`https://jsonplaceholder.typicode.com/photos/${path}`).then(data => 
-    data)
+    const data = await context.$axios.$get(`https://jsonplaceholder.typicode.com/photos/123`)
     return { 
       data
     }
   },
+  mounted() {
+    console.log(this.$auth)
+    this.$auth.login({
+      loggedIn: true,
+      strategy: '12',
+      user: {
+        name: 'Osman'
+      }
+    })
+      .then(() => {
+        console.log(this.$auth)
+      })
+  }
 }
 </script>

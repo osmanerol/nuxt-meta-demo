@@ -9,38 +9,53 @@
 
 <script>
 export default {
-  name: 'FetchPathPage',
+  name: 'AsyncDataPathPage',
   head() {
     return {
-      title: this.data.title,
+      title: `${this.data.albumId} - ${this.data.id}`,
       meta: [
         {
-          hid: 'title',
           name: 'title',
-          content: `${this.data.albumId} - ${this.data.id}`
+          content: `${this.data.albumId} - ${this.data.id} default`
         },
         {
-          hid: 'description',
           name: 'description',
-          content: this.data.title
+          content: this.data.title + ' default'
         },
         {
-          hid: 'image',
-          name: 'image',
+          property: 'og:title',
+          content: `${this.data.albumId} - ${this.data.id} og`
+        },
+        {
+          property: 'og:description',
+          content: this.data.title + ' og'
+        },
+        {
+          property: 'og:image',
           content: this.data.thumbnailUrl
-        }
+        },
+        {
+          property: 'twitter:title',
+          content: `${this.data.albumId} - ${this.data.id} twitter`
+        },
+        {
+          property: 'twitter:description',
+          content: this.data.title + ' twitter' 
+        },
+        {
+          property: 'twitter:image',
+          content: this.data.thumbnailUrl
+        },
       ]
     }
   },
   data() {
     return {
-      data: []
+      data: {}
     }
   },
   async fetch() {
-    const path = this.$route.params.path
-    this.$axios.$get(`https://jsonplaceholder.typicode.com/photos/${path}`).then(data => 
-    this.data = data)
+    this.data = await this.$axios.$get(`https://jsonplaceholder.typicode.com/photos/123`)
   }
 }
 </script>
